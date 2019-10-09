@@ -1,6 +1,6 @@
 defmodule :"💩" do
   @moduledoc """
-  Documentation for Poo.
+  Documentation for 💩.
   """
 
   @doc """

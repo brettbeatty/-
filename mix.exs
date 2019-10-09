@@ -1,13 +1,21 @@
-defmodule Poo.MixProject do
+defmodule :"💩.MixProject" do
   use Mix.Project
 
   def project do
     [
       app: :"💩",
       version: "0.0.0",
+      description: "Understanding emojis in Elixir code",
+      source_url: "https://github.com/brettbeatty/poo_emoji",
       elixir: "~> 1.9",
+      package: [
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/brettbeatty/poo_emoji"}
+      ],
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: [
+        {:ex_doc, "~> 0.21.2", only: [:dev, :test]}
+      ]
     ]
   end
 
@@ -15,14 +23,6 @@ defmodule Poo.MixProject do
   def application do
     [
       extra_applications: [:logger]
-    ]
-  end
-
-  # Run "mix help deps" to learn about dependencies.
-  defp deps do
-    [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
 end
