@@ -8,11 +8,11 @@ defmodule :"💩" do
 
   ## Examples
 
-      iex> :"💩".hello()
-      :world
+      iex> :"💩"."🧻"()
+      "🚽"
 
   """
-  def hello do
-    :world
+  def unquote(:"🧻")() do
+    "🚽"
   end
 end

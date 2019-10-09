@@ -3,6 +3,6 @@ defmodule :"💩Test" do
   doctest :"💩"
 
   test "greets the world" do
-    assert :"💩".hello() == :world
+    assert :"💩"."🧻"() == "🚽"
   end
 end
